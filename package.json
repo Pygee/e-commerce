@@ -6,7 +6,9 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "cucumber": "^6.0.5",
     "firebase": "^7.13.1",
+    "gherkin-testcafe": "^2.5.0",
     "node-sass": "^4.13.1",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
@@ -15,13 +17,15 @@
     "react-scripts": "3.4.0",
     "redux": "^4.0.5",
     "redux-logger": "^3.0.6",
-    "reselect": "^4.0.0"
+    "redux-persist": "^6.0.0",
+    "reselect": "^4.0.0",
+    "testcafe": "^1.8.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "test": "gherkin-testcafe chrome src/testcafe/test.js src/testcafe/test.feature"
   },
   "eslintConfig": {
     "extends": "react-app"
