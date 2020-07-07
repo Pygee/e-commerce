@@ -30,7 +30,6 @@ const StripeCheckoutButton = ({ price }) => {
       name="MAv CLothing"
       billingAddress
       shippingAddress
-      image
       description={`Your total is $${price}`}
       amount={priceForStripe}
       panelLabel="Pay now"
