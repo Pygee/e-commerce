@@ -10,7 +10,6 @@ const ShopPage = ({ match, fetchCollectionsStartAsync }) => {
     fetchCollectionsStartAsync();
   }, [fetchCollectionsStartAsync]);
 
-
   return (
     <div className="shop-page">
       <Route
