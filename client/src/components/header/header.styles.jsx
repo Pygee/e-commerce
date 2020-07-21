@@ -14,6 +14,10 @@ export const LogoContainer = styled(Link)`
   width: 70px;
   padding: 25px;
   margin-left: 60px;
+  @media screen and (max-width: 800px) {
+    margin-left: 0px;
+    padding: 25px 0px 0px 0px;
+  }
 `;
 
 export const OptionsContainer = styled.div`
@@ -24,9 +28,14 @@ export const OptionsContainer = styled.div`
   justify-content: flex-end;
   margin-right: 73px;
   margin-top: 25px;
+  @media screen and (max-width: 800px) {
+    margin-right: 25px;
+    width: 0%;
+  }
 `;
 
 export const OptionLink = styled(Link)`
   padding: 10px 15px;
   cursor: pointer;
+  white-space: nowrap;
 `;
